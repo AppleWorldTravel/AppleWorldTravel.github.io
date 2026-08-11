@@ -161,11 +161,16 @@ h3 { font-size: clamp(18px, 4vw, 24px); font-weight: 700; }
 }
 .hero-btn:hover { opacity: .88; }
 .hero-pdf-link {
-  display: block; text-align: center;
-  color: rgba(255,255,255,0.75); font-size: 13px;
-  margin-top: 14px; text-decoration: underline;
+  display: inline-block;
+  background: rgba(255,255,255,0.08);
+  color: var(--white); font-size: 16px; font-weight: 700;
+  padding: 15px 28px; border-radius: 12px;
+  text-decoration: none; border: 1.5px solid rgba(255,255,255,0.55);
+  font-family: inherit; transition: background .2s, border-color .2s;
+  width: 100%; text-align: center; max-width: 360px;
+  margin-top: 12px;
 }
-.hero-pdf-link:hover { color: var(--white); }
+.hero-pdf-link:hover { background: rgba(255,255,255,0.16); border-color: rgba(255,255,255,0.85); }
 
 /* ─── Sections ─── */
 section { padding: 60px 20px; }
@@ -731,7 +736,7 @@ footer strong { color: var(--white); }
     <p class="pricing-note">* ราคาดังกล่าวเป็นราคาเริ่มต้น อาจมีการเปลี่ยนแปลงตามจำนวนผู้เดินทางและสายการบิน<br>กรุณาติดต่อเจ้าหน้าที่เพื่อขอราคาที่แน่นอน</p>
     <br>
     <a href="#contact" class="hero-btn" style="max-width:100%;display:block;text-align:center">สอบถามราคาและจองทริปนี้ →</a>
-    <a href="../Programs/THE BETTER ALPS HAKUBA KUSATSU FUKUI OSAKA.pdf" class="hero-pdf-link" target="_blank">📄 ดาวน์โหลดโปรแกรม PDF</a>
+    <a href="../Programs/THE BETTER ALPS HAKUBA KUSATSU FUKUI OSAKA.pdf" class="hero-pdf-link" style="max-width:100%" target="_blank">📄 ดาวน์โหลดโปรแกรม PDF</a>
   </div>
 </section>
 
