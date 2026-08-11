@@ -313,6 +313,26 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; backg
 }
 .trusted-logo img { max-width:100%; max-height:100%; object-fit:contain; }
 
+/* ── Customer Photos ── */
+.customers-section { background:var(--gray); padding:64px 20px 88px; }
+.customers-header { max-width:1100px; margin:0 auto 32px; text-align:center; }
+.customers-header h3 { color:var(--text-dark); font-size:18px; font-weight:700; margin-bottom:6px; }
+.customers-header p { color:var(--mid); font-size:13px; }
+.customers-grid {
+  max-width:1100px; margin:0 auto;
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:14px;
+}
+.customer-photo {
+  aspect-ratio:4/3; border-radius:var(--radius); overflow:hidden;
+  border:1px solid var(--border);
+}
+.customer-photo img {
+  width:100%; height:100%; object-fit:cover; display:block;
+  transition:transform .4s;
+}
+.customer-photo:hover img { transform:scale(1.04); }
+
 /* ── Footer ── */
 footer {
   background:var(--black); color:#fff;
@@ -371,13 +391,7 @@ footer {
   <div class="hero-content">
     <div class="hero-label">Apple World Travel · Premium Japan Tours</div>
     <h1>ทัวร์ญี่ปุ่น 2026–2027</h1>
-    <p>28 โปรแกรมสุดพิเศษ ฤดูใบไม้ร่วง · คริสต์มาส · ปีใหม่<br>โดยสายการบินไทยและ Japan Airlines</p>
-    <div class="hero-stats">
-      <div class="stat"><div class="stat-num">28</div><div class="stat-label">โปรแกรม</div></div>
-      <div class="stat"><div class="stat-num">69K+</div><div class="stat-label">เริ่มต้น</div></div>
-      <div class="stat"><div class="stat-num">TG+JAL</div><div class="stat-label">สายการบิน</div></div>
-      <div class="stat"><div class="stat-num">7–9</div><div class="stat-label">วัน</div></div>
-    </div>
+    <p>ฤดูใบไม้ร่วง · คริสต์มาส · ปีใหม่<br>โดยสายการบินไทยและ Japan Airlines</p>
     <div class="hero-slider">
       <div class="hero-slide">🏢 ผู้เชี่ยวชาญกรุ๊ปทัวร์องค์กร &amp; Incentive Trip</div>
       <div class="hero-slide">🏛️ รับจัดกรุ๊ปศึกษาดูงาน หน่วยงานภาครัฐและเอกชน</div>
@@ -462,6 +476,24 @@ footer {
     <div class="trusted-logo"><img src="Logos/EVE.jpeg" alt="EVE" loading="lazy"></div>
     <div class="trusted-logo"><img src="Logos/Tao_Kae_Noi_logo.svg.webp" alt="เถ้าแก่น้อย" loading="lazy"></div>
     <div class="trusted-logo"><img src="Logos/Thai-Awesome.webp" alt="Thai Awesome" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- Customer Photos -->
+<section class="customers-section">
+  <div class="customers-header">
+    <h3>ภาพบรรยากาศจากลูกค้าจริงของเรา</h3>
+    <p>ช่วงเวลาดีๆ จากทริปจริงของลูกค้า Apple World Travel</p>
+  </div>
+  <div class="customers-grid">
+    <div class="customer-photo"><img src="Customers/customer-01.jpg" alt="ลูกค้า Apple World Travel เดินทางที่สนามบิน" loading="lazy"></div>
+    <div class="customer-photo"><img src="Customers/customer-02.jpg" alt="กลุ่มลูกค้า BG Pathum United เดินทางเชียร์ฟุตบอลที่ญี่ปุ่น" loading="lazy"></div>
+    <div class="customer-photo"><img src="Customers/customer-03.jpg" alt="สัมภาระลูกค้า Apple World Travel ที่สนามบิน" loading="lazy"></div>
+    <div class="customer-photo"><img src="Customers/customer-04.jpg" alt="กรุ๊ปองค์กร Ecolab เดินทางศึกษาดูงานที่ญี่ปุ่น" loading="lazy"></div>
+    <div class="customer-photo"><img src="Customers/customer-05.jpg" alt="กรุ๊ปองค์กรลูกค้า Apple World Travel เดินทางดูงาน" loading="lazy"></div>
+    <div class="customer-photo"><img src="Customers/customer-06.jpg" alt="กรุ๊ปองค์กรเยี่ยมชมบริษัท Fortinet" loading="lazy"></div>
+    <div class="customer-photo"><img src="Customers/customer-07.jpg" alt="กรุ๊ป EVE AND BOY เดินทางท่องเที่ยวที่ฟุกุโอกะ ญี่ปุ่น" loading="lazy"></div>
+    <div class="customer-photo"><img src="Customers/customer-08.jpg" alt="กรุ๊ปลูกค้าบนรถไฟชมวิวที่ญี่ปุ่น" loading="lazy"></div>
   </div>
 </section>
 
